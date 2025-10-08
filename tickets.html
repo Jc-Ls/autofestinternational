@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>🚗Get Your Tickets | AutoFest International</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Scrolling Ribbon Banner -->
+  <div class="autofest-ribbon">
+  <div class="autofest-ribbon-content">
+    🚗 Raffle Tickets Available | 🎟️ VIP Reservations | 🏍️ Vendor & Merchandise Registration | 🎤 20+ Live Performers + Top Music Artist | 🎁 300+ Amazing Prizes | 
+    <span class="grand-prize">💎 GRAND PRIZE: A Custom-Built Lexus IS 250 by MOE_LEXUS 💎</span> |
+    📱 Laptops, Phones, Tricycle & More! | 🚘 Autofest X Trade Expo — Experience the Thrill!
+    <!-- duplicated once for smooth looping -->
+    🚗 Raffle Tickets Available | 🎟️ VIP Reservations | 🏍️ Vendor & Merchandise Registration | 🎤 20+ Live Performers + Top Music Artist | 🎁 300+ Amazing Prizes | 
+    <span class="grand-prize">💎 GRAND PRIZE: A Custom-Built Lexus IS 250 by MOE_LEXUS 💎</span> |
+    📱 Laptops, Phones, Tricycle & More! | 🚘 Autofest X Trade Expo — Experience the Thrill!
+  </div>
+</div>
+  <header class="site-header py-3 bg-dark text-white">
+  <div class="container header-inner">
+    <div class="brand">
+      <!-- Logo image — used as brand on desktop and as toggle on mobile -->
+      <img src="images/logo.png" alt="AutoFest Logo" class="brand-logo me-2 mobile-nav-logo" style="cursor:pointer;">
+      <!-- KEEP .brand-gradient so the gradient text persists -->
+      <span class="fs-4 brand-gradient">🚗AutoFest International🚗</span>
+    </div>
+
+    <!-- The main nav — note id and class are what the JS expects -->
+    <nav id="primary-nav" class="primary-nav">
+      <a href="index.html" class="nav-link">HOME</a>
+      <a href="vendor-registration.html" class="nav-link">VENDOR REGISTRATION</a>
+      <a href="vip-tickets.html" class="nav-link">VIP RESERVATION</a>
+      <a href="merchandise.html" class="nav-link">MERCHANDISE</a>
+      <a href="tickets.html" class="nav-link">RAFFLE TICKETS</a>
+      <a href="about.html" class="nav-link">ABOUT</a>
+      <a href="contact.html" class="nav-link">CONTACT</a>
+    </nav>
+  </div>
+</header>
+  <section class="tickets-hero">
+  <div class="container">
+    <h1>🚗Get Your Tickets</h1>
+    <p>Join the raffle draw and win exciting prizes!</p>
+    <a href="https://tickethub.ng/autofest-international-87967315" target="_blank" class="btn btn-primary">🚗Buy Now!!!</a>
+  </div>
+</section>
+
+<div class="raffle-poster">
+  <img src="images/RAFFLE DRAW POSTER.PNG" alt="Raffle Draw Poster" class="mb-3 d-block mx-auto hero-animate" style="height:100vw;width:px;box-shadow:none;border-radius:5%;background-repeat:no-repeat/cover">
+</div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ================== FOOTER SECTION ================== -->
+<footer class="bg-dark text-light py-4 mt-5">
+  <div class="container text-center">
+    <p class="mb-3 fw-semibold">Follow us @autofest_intl</p>
+    <div class="d-flex justify-content-center gap-4 fs-4">
+      <a href="https://www.instagram.com/autofest_intl" class="text-light" target="_blank"><i class="bi bi-instagram"></i></a>  
+      <a href="https://www.facebook.com/autofest_intl" class="text-light" target="_blank"><i class="bi bi-facebook"></i></a>
+      <a href="https://x.com/autofest_intl" class="text-light" target="_blank"><i class="bi bi-twitter-x"></i></a>
+      <a href="https://www.tiktok.com/@autofest_intl" class="text-light" target="_blank"><i class="bi bi-tiktok"></i></a>
+      <a href="https://www.youtube.com/@autofest_intl" class="text-light" target="_blank"><i class="bi bi-youtube"></i></a>
+    </div>
+    <p class="mt-3 mb-0 small text-secondary">© 2025 AutoFest International. All Rights Reserved.</p>
+  </div>
+</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+  // Bootstrap carousel auto slide
+  const prizeCarousel = document.querySelector('#prizeCarousel');
+  if (prizeCarousel) {
+    new bootstrap.Carousel(prizeCarousel, { interval: 4000, ride: 'carousel' });
+  }
+
+  // Auto theme detection
+  if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    document.body.classList.add('dark-theme');
+  } else {
+    document.body.classList.add('light-theme');
+  }
+
+  // Scroll reveal effect
+  function revealOnScroll() {
+    const reveals = document.querySelectorAll('.reveal');
+    reveals.forEach(el => {
+      const windowHeight = window.innerHeight;
+      const revealTop = el.getBoundingClientRect().top;
+      const revealPoint = 100;
+      if (revealTop < windowHeight - revealPoint) {
+        el.classList.add('active');
+      }
+    });
+  }
+  window.addEventListener('scroll', revealOnScroll);
+  window.addEventListener('load', revealOnScroll);
+</script>
+<script>
+  // Bootstrap carousel auto slide
+  const prizeCarousel = document.querySelector('#prizeCarousel');
+  if (prizeCarousel) {
+    new bootstrap.Carousel(prizeCarousel, { interval: 4000, ride: 'carousel' });
+  }
+
+  // Auto theme detection
+  if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    document.body.classList.add('dark-theme');
+  } else {
+    document.body.classList.add('light-theme');
+  }
+
+  // Scroll reveal effect
+  function revealOnScroll() {
+    const reveals = document.querySelectorAll('.reveal');
+    reveals.forEach(el => {
+      const windowHeight = window.innerHeight;
+      const revealTop = el.getBoundingClientRect().top;
+      const revealPoint = 100;
+      if (revealTop < windowHeight - revealPoint) {
+        el.classList.add('active');
+      }
+    });
+  }
+  window.addEventListener('scroll', revealOnScroll);
+  window.addEventListener('load', revealOnScroll);
+</script>
+  
+</body>
+  <script>
+    // Mobile nav: Use logo as toggle
+    document.addEventListener('DOMContentLoaded', function() {
+      var logo = document.querySelector('.mobile-nav-logo');
+      var nav = document.getElementById('primary-nav');
+      function isMobile() {
+        return window.innerWidth <= 991;
+      }
+      if (logo && nav) {
+        logo.addEventListener('click', function() {
+          if (isMobile()) {
+            nav.classList.toggle('open');
+          }
+        });
+      }
+      // Close nav when resizing to desktop
+      window.addEventListener('resize', function() {
+        if (!isMobile() && nav) nav.classList.remove('open');
+      });
+    });
+  </script>
+</html>

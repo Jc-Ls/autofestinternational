@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>🚗Home | AutoFest International</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <!-- Lightbox2 CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
+</head>
+<body class="bg-dark text-white">
+  <!-- Scrolling Ribbon Banner -->
+ <div class="autofest-ribbon">
+  <div class="autofest-ribbon-content">
+    🚗 Raffle Tickets Available | 🎟️ VIP Reservations | 🏍️ Vendor & Merchandise Registration | 🎤 20+ Live Performers + Top Music Artist | 🎁 300+ Amazing Prizes | 
+    <span class="grand-prize">💎 GRAND PRIZE: A Custom-Built Lexus IS 250 by MOE_LEXUS 💎</span> |
+    📱 Laptops, Phones, Tricycle & More! | 🚘 Autofest X Trade Expo — Experience the Thrill!
+    <!-- duplicated once for smooth looping -->
+    🚗 Raffle Tickets Available | 🎟️ VIP Reservations | 🏍️ Vendor & Merchandise Registration | 🎤 20+ Live Performers + Top Music Artist | 🎁 300+ Amazing Prizes | 
+    <span class="grand-prize">💎 GRAND PRIZE: A Custom-Built Lexus IS 250 by MOE_LEXUS 💎</span> |
+    📱 Laptops, Phones, Tricycle & More! | 🚘 Autofest X Trade Expo — Experience the Thrill!
+  </div>
+</div>
+  <header class="site-header py-3 bg-dark text-white">
+  <div class="container header-inner">
+    <div class="brand">
+      <!-- Logo image — used as brand on desktop and as toggle on mobile -->
+      <img src="images/logo.png" alt="AutoFest Logo" class="brand-logo me-2 mobile-nav-logo" style="cursor:pointer;">
+      <!-- KEEP .brand-gradient so the gradient text persists -->
+      <span class="fs-4 brand-gradient">🚗AutoFest International🚗</span>
+    </div>
+
+    <!-- The main nav — note id and class are what the JS expects -->
+    <nav id="primary-nav" class="primary-nav">
+      <a href="index.html" class="nav-link">HOME</a>
+      <a href="vendor-registration.html" class="nav-link">VENDOR REGISTRATION</a>
+      <a href="vip-tickets.html" class="nav-link">VIP RESERVATION</a>
+      <a href="merchandise.html" class="nav-link">MERCHANDISE</a>
+      <a href="tickets.html" class="nav-link">RAFFLE TICKETS</a>
+      <a href="about.html" class="nav-link">ABOUT</a>
+      <a href="contact.html" class="nav-link">CONTACT</a>
+    </nav>
+  </div>
+</header>
+
+  <!-- Hero Section with Animated Slideshow -->
+
+  <section class="hero section-hero text-center position-relative" style="overflow:hidden;">
+    <div class="hero-full-bg position-relative d-flex align-items-center justify-content-center" style="min-height:100vh;width:100vw;overflow:hidden;">
+      <div id="heroCarousel" class="carousel slide w-100 h-100 position-absolute top-0 start-0" data-bs-ride="carousel" data-bs-interval="5000" style="z-index:1;">
+        <div class="carousel-inner w-100 h-100">
+          <div class="carousel-item active w-100 h-100">
+            <img src="images/event1.jpg" class="d-block position-absolute top-0 start-0" alt="Hero Slide 1" style="object-fit:cover;width:100vw;height:100vh;min-height:600px;max-width:none;max-height:none;filter:brightness(0.5);">
+          </div>
+          <div class="carousel-item w-100 h-100">
+            <img src="images/event2.jpg" class="d-block position-absolute top-0 start-0" alt="Hero Slide 2" style="object-fit:cover;width:100vw;height:100vh;min-height:600px;max-width:none;max-height:none;filter:brightness(0.5);">
+          </div>
+        </div>
+      </div>
+      <div class="position-relative text-center w-100" style="z-index:2;">
+  <img src="images/logo.png" alt="AutoFest Logo" class="mb-3 d-block mx-auto hero-animate" style="height:100px;box-shadow:none;border-radius:50%;object-fit:cover;">
+      <!-- HTML -->
+<h1 class="text-center fw-bold mb-2 live-glow-heading" style="color: #FFD700; letter-spacing: 1px; text-shadow: 1px 2px 8px #000a; position: relative; z-index: 1;"><strong>🚗Welcome To Autofest X TradeExpo🚗</strong></h1>
+
+<div class="container mt-4 hero-animate-delayed">
+  <div class="row justify-content-center g-3">
+    <!-- Button 1 -->
+    <!--div class="col-6 col-md-4 col-lg-auto d-flex justify-content-center">
+      <a href="tickets.html" class="btn btn-primary btn-lg">Get Raffle Ticket</a>
+    </div>
+
+    <!- Button 2 -->
+    <!--div class="col-6 col-md-4 col-lg-auto d-flex justify-content-center">
+      <a href="about.html" class="btn btn-outline-light btn-lg">Know More</a>
+    </div>
+
+    <!- Button 3 -->
+    <!--div class="col-6 col-md-4 col-lg-auto d-flex justify-content-center">
+      <a href="vendor-registration.html" class="btn btn-primary btn-lg">vendor-registration</a>
+    </div>
+
+    <!- Button 4 -->
+    <!--div class="col-6 col-md-4 col-lg-auto d-flex justify-content-center">
+      <a href="vip-ticket.html" class="btn btn-outline-light btn-lg">VIP Reservation</a>
+    </div>
+
+    <!-- Button 5 -->
+    <div class="col-6 col-md-4 col-lg-auto d-flex justify-content-center">
+      <a href="registration.html" class="btn btn-primary btn-lg">🚗REGISTER HERE</a>
+    </div>
+  </div>
+</div>
+      </div>
+      <style>
+        .text-shadow { text-shadow: 0 2px 8px #000, 0 1px 2px #222; }
+        .hero-full-bg { min-height: 100vh; background: #111; }
+      </style>
+    </div>
+  </section>
+   
+<!-- live-performance grid Section -->
+  <section class="py-5 bg-dark text-white">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-md-6">
+          <img src="images/MOE_lexus.jpg" alt="Moe lexus stunt" class="img-fluid rounded-4 shadow" style="object-fit:cover;max-height:320px;">
+        </div>
+        <div class="col-md-6">
+          <h2 class="fw-bold mb-3">🚗Live Performances</Live-Performances></h2>
+          <p>Experience the thrill of high speed performances and coordinated stunts by Professional Performers and Electrifying performances from Musical artists and General entertainers.</p>
+          <div class="col-6 col-md-4 col-lg-auto d-flex justify-content-center">
+      <a href="live-performance.html" class="btn btn-primary btn-lg">🚗Learn more</a>
+    </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vendor & Raffle Draw Section -->
+  <section class="py-5 bg-dark">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <!-- Call for Vendors -->
+        <div class="col-12 col-lg-6">
+          <div class="d-flex flex-column flex-md-row align-items-center bg-dark text-white rounded-4 shadow p-3 h-100">
+            <img src="images/CALL FOR VENDOR.PNG" alt="Call for Vendor Poster" class="me-md-4 mb-3 mb-md-0" style="width:300px;max-width:100%;border-radius:1rem;object-fit:cover;">
+            <div>
+              <h3 class="fw-bold mb-2">🚗TradeExpo</h3>
+              <p>Join 🚗AutoFest X TradeExpo as a vendor and showcase your products or services to thousands of car lovers and festival goers. Secure your spot and grow your brand at the biggest auto event of the year!</p>
+              <a href="https://paystack.com/buy/autofest-x-tradeexpo-vendor-kpjkrw" target="_blank" class="btn-vendor">🚗VENDOR REGISTRATION</a>
+            </div>
+          </div>
+        </div>
+        <!-- Raffle Draw -->
+        <div class="col-12 col-lg-6">
+          <div class="d-flex flex-column flex-md-row align-items-center bg-dark text-white rounded-4 shadow p-3 h-100">
+            <img src="images/RAFFLE DRAW POSTER.PNG" alt="Raffle Draw Poster" class="me-md-4 mb-3 mb-md-0" style="width:300px;max-width:100%;border-radius:1rem;object-fit:cover;">
+            <div>
+              <h3 class="fw-bold mb-2">🚗Raffle Draw</h3>
+              <p>Participate in our exciting raffle draw for a chance to win amazing prizes! Get your ticket, follow the instructions, and be present at the event to claim your reward. Don’t miss out!</p>
+              <a href="https://tickethub.ng/autofest-international-87967315" target="_blank" class="btn btn-primary">🚗GET RAFFLE TICKET!!!</a>
+             </div>
+          </div>
+        </div>
+         <div class="col-12 col-lg-6">
+          <div class="d-flex flex-column flex-md-row align-items-center bg-dark text-white rounded-4 shadow p-3 h-100">
+            <img src="images/vip-bg.jpg" alt="vip reservation image" class="me-md-4 mb-3 mb-md-0" style="width:300px;max-width:100%;border-radius:1rem;object-fit:cover;">
+            <div>
+              <h3 class="fw-bold mb-2">🚗VIP Reservation</h3>
+              <p>Join 🚗Enjoy AutoFest X TradeExpo in style with VIP parking, cabana access, reserved seats and exclusive packs.</p>
+              <a href="https://paystack.shop/pay/kff7uttwac" class="btn btn-primary btn-lg mt-3">🚗CLICK TO MAKE A RESERVATION</a>
+          </div>
+        </div>
+        </div>
+        </div>
+  </section>
+          <!-- Merchandise Section -->
+  <section class="py-5 bg-dark>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-6 mb-4 mb-md-0">
+          <div class="d-flex flex-wrap gap-3 justify-content-center bg-dark text-white rounded-4 shadow p-3 h-100">
+            <img src="images/shirt1.png" alt="T-shirt" style="width:100px;height:100px;object-fit:cover;border-radius:0.5rem;">
+            <img src="images/hoodie.png" alt="hoodie" style="width:100px;height:100px;object-fit:cover;border-radius:0.5rem;">
+            <img src="images/cap2.jpg" alt="cap" style="width:100px;height:100px;object-fit:cover;border-radius:0.5rem;">
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <h3 class="fw-bold mb-2">Official Merchandise</h3>
+          <p>Get your exclusive 🚗AutoFest T-shirts, caps, and vests—customized for true fans! Show your support and take home a piece of the festival.</p>
+          <a href="https://paystack.shop/pay/zp8lii1487" target="_blank" class="btn btn-primary">🚗CLICK HERE TO MAKE PURCHASE</a>
+        </div>
+      </div>
+    </div>
+  </section>
+<section id="giveaway-section" class="container my-5">
+  <div class="text-center mb-5">
+    <h1 class="fw-bold text-capitalize"style="color:yellow;">🚗AutoFest X TradeExpo🚗</h1>
+    <p class="lead" style="color:orange;">Drive. Trade. Experience.</p>
+  </div>
+
+  <!-- About & Sponsorship -->
+  <div class="row align-items-start mb-5">
+    <div class="col-lg-6 mb-4 mb-lg-0">
+      <h2 class="fw-semibold text-primary">🚗About the Event</h2>
+      <p style="color:#FFD700">
+        🚗AutoFest X TradeExpo is a world-class automotive and lifestyle festival
+        designed to showcase the best of cars, bikes, culture, creativity and commerce.
+      </p>
+    </div>
+
+    <div class="col-lg-6">
+      <h2 class="fw-semibold text-primary">🚗Sponsorship & Partnerships</h2>
+      <p style="color:orangered">
+        Invest in visibility with event sponsorship by choosing from our tiered
+        packages, whether as a Title Sponsor with maximum exposure, or a Stage Partner
+        branding the performance zone.
+      </p>
+      <p><strong style="color: navy;">Email:</strong>autofestinternational@gmail.com</p>
+    </div>
+  </div>
+
+  <!-- Giveaways -->
+  <div class="row align-items-center">
+    <!-- Carousel -->
+    <div class="col-lg-6 mb-4 mb-lg-0">
+      <div id="giveawayCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+        <div class="carousel-inner rounded shadow-sm">
+          <div class="carousel-item active">
+            <img src="images/lexus.jpg" class="d-block w-100 rounded" alt="Custom Lexus">
+          </div>
+          <div class="carousel-item">
+            <img src="images/tricycle.jpg" class="d-block w-100 rounded" alt="Tricycle Prize">
+          </div>
+          <div class="carousel-item">
+            <img src="images/motorcycle.jpg" class="d-block w-100 rounded" alt="Motorcycle">
+          </div>
+          <div class="carousel-item">
+            <img src="images/iphone.jpg" class="d-block w-100 rounded" alt="iPhone Prize">
+          </div>
+          <div class="carousel-item">
+            <img src="images/laptop.jpg" class="d-block w-100 rounded" alt="Laptop Prize">
+          </div>
+          <div class="carousel-item">
+            <img src="images/gadget.jpg" class="d-block w-100 rounded" alt="Gadgets">
+          </div>
+          <div class="carousel-item">
+            <img src="images/cash.jpg" class="d-block w-100 rounded" alt="Cash Prizes">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#giveawayCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#giveawayCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Giveaway Poster -->
+    <div class="col-lg-6 text-center">
+      <h2 class="fw-bold mb-3">Stand a Chance to Win Giveaways!</h2>
+      <img src="images/giveaway.PNG" class="img-fluid rounded shadow-lg" alt="Giveaway Poster" style="max-width: 85%; width: 400;">
+      <ul class="list-unstyled mt-4 text-start mx-auto" style="max-width: 400px; color:orange;font-size:1.5rem;">
+        <li>🚘 A Custom-Built Lexus IS by Mohammed_Lexus</li>
+        <li>🚖 Tricycle</li>
+        <li>🏍️ Motorcycle</li>
+        <li>📱 iPhone</li>
+        <li>💻 Laptop</li>
+        <li>🎧 Gadgets & Accessories</li>
+        <li>💵 Cash Prizes</li>
+      </ul>
+      <p class="fw-semibold mt-3 text-danger">Over 300 prizes to be won!</p>
+      <p class="text-muted">🔥 Limited slots available!</p>
+    </div>
+  </div>
+</section>
+
+ <!-- Next Event Poster (animated, colored bg, correct position) -->
+<section class="py-5 text-center" style="background: linear-gradient(120deg, #181d2a 0%, #1de9b6 60%, #facc15 100%);">
+  <div class="container">
+    <h2 class="fw-bold mb-4 text-white">🚗Next Event Coming Up!🚗</h2>
+    <div class="event-poster-animate mx-auto mb-3" style="max-width:500px;">
+      <img src="images/next-event.png" alt="Next Event Poster" class="img-fluid rounded-4 shadow w-100">
+    </div>
+  </div>
+</section>
+<style>
+  .event-poster-animate {
+    animation: posterAlert 1.2s cubic-bezier(.4,0,.2,1) infinite alternate;
+    box-shadow: 0 0 0 0 #e52d27, 0 0 32px 8px #facc15;
+  }
+  @keyframes posterAlert {
+    0% { box-shadow: 0 0 0 0 #e52d27, 0 0 32px 8px #facc15; transform: scale(1); }
+    60% { box-shadow: 0 0 32px 8px #e52d27, 0 0 64px 16px #facc15; transform: scale(1.04); }
+    100% { box-shadow: 0 0 0 0 #e52d27, 0 0 32px 8px #facc15; transform: scale(1); }
+  }
+</style>
+<hr>
+        
+  <footer class="site-footer bg-dark text-white py-3 mt-5">
+  <!-- Official Partners Section -->
+  <section id="official-partners" style="background: black; padding: 36px 0 24px 0; border-top: 2px solid #FFD700; border-bottom: 2px solid #FFD700;">
+    <div class="container" style="max-width: 1100px; margin: 0 auto; color: white">
+      <h2 class="text-center fw-bold mb-4" style="color: white; letter-spacing: 1px; text-shadow: 1px 2px 8px #FFD70033;">Official Partners</h2>
+      <div class="row justify-content-center align-items-center g-4" style="row-gap: 32px;">
+        <!-- Ilorin car show -->
+        <div class="col-6 col-md-2 text-center">
+            <img src="images/ilorincar.png" alt="ilorincarshow Logo" style="width: 80px; height: 80px; object-fit: contain; margin-bottom: 8px; filter: drop-shadow(0 2px 8px #FFD70055);">
+            <div style="font-weight: 600; color: white; font-size: 1.05em;">🚗ILORIN CAR SHOW</div>
+          
+        </div>
+        <!-- Zaddys -->
+        <div class="col-6 col-md-2 text-center">
+            <img src="images/ZADDYS.png" alt="Zaddys Logo" style="width: 80px; height: 80px; object-fit: contain; margin-bottom: 8px; filter: drop-shadow(0 2px 8px #FFD70055);">
+            <div style="font-weight: 600; color: white; font-size: 1.05em;">🚗Strictly-ZADDYs</div>
+          
+        </div>
+        <!-- MOHAMMED LEXUS -->
+        <div class="col-6 col-md-2 text-center">
+            <img src="images/MOELEXUS-logo.jpg" alt="MOHAMMED LEXUS Logo" style="width: 80px; height: 80px; object-fit: contain; margin-bottom: 8px; filter: drop-shadow(0 2px 8px #FFD70055);">
+            <div style="font-weight: 600; color: white; font-size: 1.05em;">🚗MOHAMMED LEXUS</div>
+          
+        </div>
+        <!-- Kwara State Government -->
+        <div class="col-6 col-md-2 text-center">
+            <img src="images/kwara-state-logo.png" alt="Kwara State Government Logo" style="width: 80px; height: 80px; object-fit: contain; margin-bottom: 8px; filter: drop-shadow(0 2px 8px #FFD70055);">
+            <div style="font-weight: 600; color: white; font-size: 1.05em;">🚗KWARA STATE GOVERNMENT</div>
+        </div>
+       <!-- Jareschoicelabs (placeholder) -->
+        <div class="col-6 col-md-2 text-center">
+            <img src="images/jcl.jpg" alt="Jareschoicelabs Logo" style="width: 80px; height: 80px; object-fit: contain; margin-bottom: 8px; filter: drop-shadow(0 2px 8px #FFD70055);">
+            <div style="font-weight: 600; color: white; font-size: 1.05em;">🚗JARE'S CHOICE LABs</div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- ================== FOOTER SECTION ================== -->
+<footer class="bg-dark text-light py-4 mt-5">
+  <div class="container text-center">
+    <p class="mb-3 fw-semibold">Follow us @autofest_intl</p>
+    <div class="d-flex justify-content-center gap-4 fs-4">
+      <a href="https://www.instagram.com/autofest_intl" class="text-light" target="_blank"><i class="bi bi-instagram"></i></a>
+       <a href="https://www.facebook.com/autofest_intl" class="text-light" target="_blank"><i class="bi bi-facebook"></i></a>
+      <a href="https://x.com/autofest_intl" class="text-light" target="_blank"><i class="bi bi-twitter-x"></i></a>
+      <a href="https://www.tiktok.com/@autofest_intl" class="text-light" target="_blank"><i class="bi bi-tiktok"></i></a>
+      <a href="https://www.youtube.com/@autofest_intl" class="text-light" target="_blank"><i class="bi bi-youtube"></i></a>
+    </div>
+    <p class="mt-3 mb-0 Medium text-secondary">© 2025 AutoFest International. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Mobile nav: Use logo as toggle
+    document.addEventListener('DOMContentLoaded', function() {
+      var logo = document.querySelector('.mobile-nav-logo');
+      var nav = document.getElementById('primary-nav');
+      var navToggle = document.querySelector('.nav-toggle');
+      function isMobile() {
+        return window.innerWidth <= 991;
+      }
+      if (logo && nav) {
+        logo.addEventListener('click', function() {
+          if (isMobile()) {
+            nav.classList.toggle('open');
+            // For accessibility
+            if (navToggle) navToggle.setAttribute('aria-expanded', nav.classList.contains('open'));
+          }
+        });
+      }
+      // Close nav when resizing to desktop
+      window.addEventListener('resize', function() {
+        if (!isMobile() && nav) nav.classList.remove('open');
+      });
+    });
+  </script>
+</body>
+    <!-- ...existing code... -->
+  <!-- Lightbox2 JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+  <script>
+  // Bootstrap carousel auto slide
+  const prizeCarousel = document.querySelector('#prizeCarousel');
+  if (prizeCarousel) {
+    new bootstrap.Carousel(prizeCarousel, { interval: 4000, ride: 'carousel' });
+  }
+
+  // Auto theme detection
+  if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    document.body.classList.add('dark-theme');
+  } else {
+    document.body.classList.add('light-theme');
+  }
+
+  // Scroll reveal effect
+  function revealOnScroll() {
+    const reveals = document.querySelectorAll('.reveal');
+    reveals.forEach(el => {
+      const windowHeight = window.innerHeight;
+      const revealTop = el.getBoundingClientRect().top;
+      const revealPoint = 100;
+      if (revealTop < windowHeight - revealPoint) {
+        el.classList.add('active');
+      }
+    });
+  }
+  window.addEventListener('scroll', revealOnScroll);
+  window.addEventListener('load', revealOnScroll);
+</script>
+<script>
+// Auto slide carousel every 4 seconds
+const giveawayCarousel = document.querySelector('#giveawayCarousel');
+if (giveawayCarousel) {
+  new bootstrap.Carousel(giveawayCarousel, {
+    interval: 4000,
+    ride: 'carousel'
+  });
+}
+</script>
+<script>
+const giveawayCarousel = document.querySelector('#giveawayCarousel');
+if (giveawayCarousel) {
+  new bootstrap.Carousel(giveawayCarousel, {
+    interval: 4000,
+    ride: 'carousel'
+  });
+}
+</script>
+
+
+</body>
+</html>
